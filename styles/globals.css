@@ -1,0 +1,261 @@
+.app {
+  display: flex;
+}
+
+.title {
+  text-align: center;
+}
+
+.dashboard-img-active {
+  margin: auto 0;
+  filter: grayscale(0);
+  filter: invert(31%) sepia(100%) saturate(5561%) hue-rotate(210deg)
+    brightness(95%) contrast(100%);
+}
+
+.dashboard-img {
+  margin: auto 0;
+  filter: grayscale(100%);
+}
+
+.menu-item {
+  display: flex;
+  padding-left: 10px;
+}
+
+.menu-item h4 {
+  padding-left: 10px;
+}
+
+.menu-item-link {
+  color: black;
+  text-decoration: none;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #dddddd;
+  padding: 20px 20px 5px 20px;
+  border-right: 1px solid #ccc;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin-bottom: 2px;
+}
+
+.content-wrapper {
+  flex: 1;
+  display: flex;
+}
+
+.content {
+  flex: 1;
+  background-color: #dddddd;
+  padding: 20px;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+}
+
+.content h1 {
+  margin-right: 20px;
+}
+
+.search-image {
+  padding: 0 10px 0 10px;
+}
+
+.search-input {
+  background-color: transparent; /* Membuat input transparan */
+  border: none; /* Menghilangkan border */
+  outline: none; /* Menghilangkan focus outline */
+  color: black; /* Warna teks */
+  font-size: 16px;
+  padding: 5px;
+  width: 150px; /* Sesuaikan lebar input sesuai kebutuhan */
+}
+
+.box-container {
+  display: flex;
+  margin-top: 20px; /* Memberi jarak antara search-container dan box-container */
+}
+
+.box {
+  width: calc(33.33% - 10px); /* Mengatur lebar kolom */
+  height: 150px; /* Mengatur tinggi kolom */
+  background-color: #1a67bd; /* Warna latar belakang */
+  display: flex;
+  justify-content: center; /* Mengatur posisi horizontal gambar di tengah */
+  align-items: center; /* Mengatur posisi vertikal gambar di tengah */
+}
+
+/* Memberikan border radius pada sisi kiri box pertama */
+.box:first-child {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+/* Memberikan border radius pada sisi kanan box terakhir */
+.box:last-child {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+/* Menambahkan garis vertikal antara kolom */
+.box + .box {
+  border-left: 1px solid #ccc; /* Garis vertikal */
+}
+
+.box h2,
+h4 {
+  color: white; /* Warna teks putih */
+  text-align: center;
+}
+
+.graph-chart {
+  padding: 10px;
+}
+
+.table-container {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.table-container table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table-container th,
+td {
+  padding: 8px;
+  text-align: left;
+}
+
+.table-container th {
+  color: #999999;
+  border-bottom: 1px solid #999999;
+}
+
+.content-second {
+  width: 250px;
+  padding: 20px;
+}
+
+.profil {
+  display: flex;
+  align-items: center;
+  padding-bottom: 30px;
+}
+
+.transaction-button {
+  background-color: #1a67bd;
+  color: white;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 5px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.vertical-line {
+  border-left: 1px solid #ddd;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.notification-circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.profile-image {
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.box-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Membagi menjadi 2 kolom */
+  grid-gap: 10px; /* Spasi antar box */
+}
+
+.box-child {
+  background-color: #ddd;
+  height: 140px; /* Atur tinggi sesuai kebutuhan */
+  border-radius: 10px;
+}
+
+.circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px;
+}
+
+.text-box {
+  color: black;
+  text-align: start;
+  margin-left: 15px;
+}
+
+.text-box-2 {
+  color: #999999;
+  text-align: start;
+  margin-left: 15px;
+  margin-top: -15px;
+}
+
+.box-content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.box-content image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: inherit;
+}
+
+.button-2 {
+  margin-top: 20px;
+  padding-bottom: 20px;
+}
+
+.see-all-button {
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.see-all-button span {
+  margin-right: 10px;
+}
